@@ -114,6 +114,18 @@ const getApr = (pool) => {
   });
   totalApr = totalApr.toFixed(4);
   pool.totalApr = totalApr;
+  if (
+    pool.id === "0x12EE63e73d6BC0327439cdF700ab40849e8e4284" ||
+    pool.id === "0xAf059909235c8F8168bE38cB86717134B9050384" ||
+    pool.id === "0xA3668B13D1064E79B6fFA438f28a3665Bb41D8eF" ||
+    pool.id === "0x8F42e0cd7176Ef472E402Bab0e4bca234a3693C3"
+  ) {
+    pool.aprSolid = "N/A";
+    pool.aprOxd = "N/A";
+    pool.totalApr = "N/A";
+  }
+  //   console.log("price0", prices[pool.poolData.token0Address.toLowerCase()]);
+  //   console.log("price1", prices[pool.poolData.token1Address.toLowerCase()]);
   return pool;
 };
 
