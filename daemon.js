@@ -15,7 +15,7 @@ const { getPartnerApr, injectApr } = require("./apr.js");
 
 const protocolData = require("./protocol.js");
 
-const oxDaoVoter = "0xDA0027f2368bA3cb65a494B1fc7EA7Fd05AB42DD";
+const oxDaoVoter = "0xDA00eA1c3813658325243e7ABb1f1Cac628Eb582";
 const solidexVoter = "0x26E1A0d851CF28E697870e1b7F053B605C8b060F";
 const providerUrl =
   process.env.WEB3_PROVIDER_URL || "https://rpc.ankr.com/fantom";
